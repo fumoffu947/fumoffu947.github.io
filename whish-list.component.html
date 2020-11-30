@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Page Title</title>
+        <link rel="stylesheet" href="whish-list.component.css">
+    </head>
+<body>
+    <div class="SnowBackground">
+        <div class="snow layer1 a"></div>
+        <div class="snow layer1"></div> 
+        <div class="snow layer2 a"></div>
+        <div class="snow layer2"></div>
+        <div class="snow layer3 a"></div>
+        <div class="snow layer3"></div>
+    </div>
+    <div id="whish-list-whish-container" class="whish-list-box-border">
+        <div class="whish-list-box-border-inner">
+            <ul *ngFor="let w_item of whishes; index as whish_id" class="whish-list-whish">
+                <div id="whish-list-whish-item">
+                    <div id="whish-list-whish-column">
+                        <p class="whish-list-text">Pengar för ett par räven-byxor.</p>
+                    </div>
+                </div>
+                <div id="whish-list-whish-item">
+                    <div id="whish-list-whish-column">
+                        <p class="whish-list-text">Trisslot.</p>
+                    </div>
+                </div>
+                <div id="whish-list-whish-item">
+                    <div id="whish-list-whish-column">
+                        <p class="whish-list-text">Kalsonger (eller pengar för dem).</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

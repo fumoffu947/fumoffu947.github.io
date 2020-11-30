@@ -1,0 +1,143 @@
+#whish-list-whish-container {
+    margin: 0 auto;
+    background-color: rgb(211, 53, 53);
+    width: 66%;
+}
+
+.whish-list-text {
+  color: white;
+  font-size: 30px;
+}
+
+.whish-list-whish {
+    width: 100%;
+}
+
+
+#new-whish-input {
+  font-size: 20px;
+  width: 70%;
+}
+
+#user-input-row {
+  width: 100%;
+  display: flex;
+}
+
+#user-input-row-help-div {
+  width: 30%;
+}
+
+#whish-list-whish-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#whish-list-whish-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+}
+
+#whish-list-whish-column-action {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 0.2;
+    justify-content: center;
+    width: 10%;
+}
+
+#whish-remove {
+    cursor: pointer;
+    align-self: center;
+}
+
+#whish-list-item-arrow {
+    align-self: center;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0;
+    margin: 2px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #818181;
+  }
+.arrow-down {
+    width: 0; 
+    height: 0;
+    margin: 2px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #818181;
+}
+
+/* Snow effects */
+.SnowBackground {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(farthest-corner at 30vw 20vh, #466fdf 1%, #473f47 100%);
+}
+
+
+
+
+/* The fancy border around the whishes */
+.whish-list-box-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: rgba(#000, 0.5);
+    width: 100%;
+    max-width: 600px;
+    padding: 5px;
+    border: 2px solid #b78846;
+}
+.whish-list-box-border:before, .whish-list-box-border:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #b78846;
+  border: 2px solid #b78846;
+  line-height: 12px;
+  top: 5px;
+  text-align: center;
+}
+.whish-list-box-border:before {
+  left: 5px;
+}
+.whish-list-box-border:after {
+  right: 5px;
+}
+.whish-list-box-border-inner {
+  position: relative;
+  border: 2px solid #b78846;
+  padding: 40px;
+}
+.whish-list-box-border-inner:before, .whish-list-box-border-inner:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #b78846;
+    border: 2px solid #b78846;
+    line-height: 12px;
+    bottom: -2px;
+    text-align: center;
+}
+.whish-list-box-border-inner:before {
+  left: -2px;
+}
+.whish-list-box-border-inner:after {
+  right: -2px;
+}
