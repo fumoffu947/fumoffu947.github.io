@@ -4,9 +4,13 @@
     width: 66%;
 }
 
+.whish-list-header {
+  color: white;
+}
+
 .whish-list-text {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .whish-list-whish {
